@@ -12,6 +12,9 @@
   width: 90%;
   margin: auto;
 }
+.fixed-top{
+  background-color: #151515;
+}
 .navbar-brand {
   font-size: 18px;
 }
@@ -74,6 +77,8 @@
 .hero-main{
   max-width: 1920px;
   min-height: 90vh;
+  display: flex;
+  align-items: center;
 }
 .hero-main .row{
   height: 100%;
@@ -93,25 +98,28 @@
   color: #fbc85c;
 }
 .hero-main .form-select {
-  width: 70px;
+  width: 140px;
+  height: 70px;
+  font-size: 24px;
   text-align: center;
-  background-color: transparent;
+  background: #151515 !important;
   border-color: #fbc85c;
   outline: none;
   position: relative;
   color: #fbc85c;
+  appearance: none;
 }
-.hero-main .form-select:after {
-  width: 0;
-  height: 0;
-  border-left: 6px solid #fbc85c;
-  border-right: 6px solid #fbc85c;
-  border-top: 6px solid #fbc85c;
-  position: absolute;
-  top: 40%;
-  right: 5px;
+.hero-main .custom-arrow::before{
   content: "";
-  z-index: 98;
+  z-index: 100;
+  position: absolute;
+  width: 0;
+  right: 10px;
+  top: 45%;
+  height: 0;
+  border-top: 0.5rem solid #fbc85c;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
 }
 .btnMint {
   font-size: 70px !important;
@@ -160,28 +168,30 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.nft-main .col-md-4 .d-flex{
+.nft-main .col-lg-4 .d-flex{
   width: 300px;
 }
-.nft-main .col-md-4 .d-flex img{
+.nft-main .col-lg-4 .d-flex img{
   width: 50%;
 }
-.nft-main .col-md-8{
+.nft-main .col-lg-8{
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.nft-main .col-md-8 h4{
+.nft-main .col-lg-8 h4{
   color: #cecece;
 }
-.nft-main .col-md-8 ul{
+.nft-main .col-lg-8 ul{
   font-size: 18px;
 }
 .parallax{
   height: 350px;
+  text-align: center;
   background-image: url("./assets/images/banner2.jpg");
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: contain;
   background-color: rgba(0, 0, 0, 0.37);
   background-blend-mode: multiply;
@@ -260,6 +270,9 @@ display: inherit;
   top: 2px;
   left: 1px;
 }
+#timeline .timeline-movement .row{
+  --bs-gutter-x: 0 !important;
+}
 #timeline .timeline-movement {
   border-bottom: dashed 1px #3d3d3d;
   position: relative;
@@ -309,4 +322,21 @@ display: inherit;
 /* CONTACT */
 .contact-main{
   padding: 100px 0px;
+}
+
+/* FOOTER */
+.fSocials{
+  max-width: 300px;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-around;
+  margin: auto;
+}
+.fSocials a{
+  font-size: 32px;
+  color: #c7c7c7;
+}
+.fSocials a:hover{
+  color: #fff;
 }

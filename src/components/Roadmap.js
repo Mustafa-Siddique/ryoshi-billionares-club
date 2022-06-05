@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Roadmap() {
   return (
-    <div className='container'>
+    <div className='container' id='road'>
         <h2 className='text-center'>ROADMAP</h2>
         <div id="timeline">
                 <div className="row timeline-movement timeline-movement-top">

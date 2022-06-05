@@ -8,7 +8,7 @@ export default function Features() {
       <h2>FEATURES</h2>
       <p className="fs-6">Ryoshi Billionaires are uniques</p>
       <div className="row mt-5">
-        <div className="col-md-4">
+        <div className="col-md-4 my-2">
           <div className="featureHead py-3 px-5">
             <IoDiamondOutline fontSize={60} color="#fff"/>
             <h3>Rarity</h3>
@@ -17,7 +17,7 @@ export default function Features() {
               <p className="mb-0">Each Ryoshi is algorithmically generated, which guarantees its uniqueness.</p>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 my-2">
           <div className="featureHead py-3 px-5">
             <FaRegCopyright fontSize={60} color="#fff"/>
             <h3>Full Rights</h3>
@@ -26,7 +26,7 @@ export default function Features() {
               <p className="mb-0">As a Ryoshi owner, you have all rights and licenses for a unique avatar NFT (ERC-721)</p>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 my-2">
           <div className="featureHead py-3 px-5">
             <IoMapSharp fontSize={60} color="#fff"/>
             <h3>Roadmap</h3>

@@ -6,11 +6,11 @@ import img4 from '../assets/images/4.gif'
 
 export default function NFTs() {
   return (
-    <div className='container-fluid nft-main'>
+    <div className='container-fluid nft-main' id='nfts'>
         <div className="container">
             <h2 style={{fontSize:"3em", textAlign:"center"}}>Ryoshi Billionaires NFTs</h2>
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-lg-4">
                     <div>
                         <div className="d-flex">
                             <img src={img1} alt="" style={{borderTopLeftRadius:"20px"}}/>
@@ -22,7 +22,7 @@ export default function NFTs() {
                             </div>
                     </div>
                 </div>
-                <div className="col-md-8">
+                <div className="col-lg-8">
                     <h4>Each Ryoshi Billionaire is unique and generated from over 100 handcrafted 3D traits, clothing, weapons, and accessories.</h4>
                     <ul>
                         <li>4444 rare Ryoshi 3D Nft’s</li>

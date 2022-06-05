@@ -15,8 +15,60 @@ p{
   font-size: 14px;
 }
 
+@media only screen and (max-width: 1200px){
+  .navbar-brand{
+    font-size: 1rem !important;
+  }
+  .navbar-nav{
+    font-size: 14px;
+  }
+  .hero-main h1 span{
+    font-size: 60px;
+  }
+  .btnNav{
+    min-width: 150px;
+    max-height: 45px;
+  }
+}
+@media only screen and (max-width: 992px){
+  .navbar-nav{
+    font-size: 16px;
+  }
+  .hero-main h1 span{
+    font-size: 42px;
+  }
+  .navSocials{
+    margin-bottom: 25px;
+  }
+  .navSocials a{
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .hero-main h1 span{
+    font-size: 60px;
+  }
+  .btnMint{
+    min-width: 150px;
+    width: 80%;
+    font-size: 40px !important;
+  }
+}
 @media only screen and (max-width: 600px){
   #timeline .timeline-movement .ms-auto{
     margin-right: 0;
+  }
+  .navbar-brand{
+    font-size: 12px !important;
+  }
+  .navbar-brand img{
+    height: 60px;
+  }
+  #timeline{
+    width: 90%;
+    margin: auto;
+  }
+  .nft-main .col-lg-4{
+    margin-bottom: 50px;
   }
 }
