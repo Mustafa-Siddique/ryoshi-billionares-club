@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+p{
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px){
+  #timeline .timeline-movement .ms-auto{
+    margin-right: 0;
+  }
+}
